@@ -1,6 +1,7 @@
 @import "myReset";
 @import "var";
 @import "global";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
 
 
 .header{
@@ -206,15 +207,58 @@
     &__top{
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         margin-bottom: 100px;
+    }
+    &__filter-btn{
+        margin-right: 40px;
+    }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        color: $numText;
+        padding: 0 4px 5px;
+        margin-right: 25px;
+        outline-color: $primary;
     }
     &__content{
         column-count: 4;
         column-gap: 22px;
+        margin-bottom: 72px;
     }
     &__item{
-        margin-bottom: 22px;
+        margin-top: 22px;
+        position: relative;
+        &:first-child{
+            margin-top: 0;
+        }
+        &:hover .portfolio__item-link{
+            opacity: 1;
+        }
+        &-link{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            color: $white;
+            background-color: $modal;
+            border: 12px solid #A09F9F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all .3s;
+        }
         &-img{
             width: 100%;
         }
@@ -282,6 +326,9 @@
             color: $numText;
         }
     }
+}
+.mixitup-control-active{
+    border-bottom: 1px solid $primary;
 }
 
 
