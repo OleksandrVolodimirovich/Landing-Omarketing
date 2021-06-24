@@ -2,6 +2,7 @@
 @import "var";
 @import "global";
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
+@import "../../node_modules/slick-carousel/slick/slick";
 
 
 .header{
@@ -329,6 +330,66 @@
 }
 .mixitup-control-active{
     border-bottom: 1px solid $primary;
+}
+
+//end portfolio
+
+.slider-blog{
+    background-color: $bg;
+    padding: 115px 0;
+    &__item{
+        padding: 190px 0;
+        &-title{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 52px;
+            color:$title;
+            margin-bottom: 10px;
+            max-width: 675px;
+            display: inline-block;
+        }
+        &-descr{
+            max-width: 585px;
+        }
+    }
+    //start slick slider
+    & .slick-prev, & .slick-next{
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-150%);
+    }
+    & .slick-prev{
+        left: -95px;
+    }
+    & .slick-next{
+        right: 95px;
+    }
+    & .slick-dots{
+        display: flex;
+        & li + li{
+            margin-left: 13px;
+        }
+        & button{
+            background-color: $title;
+            opacity: 0.4;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            font-size: 0;
+            padding: 0;
+            border: none;
+        }
+        .slick-active button{
+            opacity: 1;
+            width: 10px;
+            height: 10px;
+            transform: translateY(-2px);
+        }
+    }
 }
 
 
