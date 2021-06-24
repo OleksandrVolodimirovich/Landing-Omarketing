@@ -1,0 +1,35 @@
+body{
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    color: $primaryText;
+    background: $white;
+}
+.container{
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.title{
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1.65px;
+    color: $title;
+    padding-bottom: 18px;
+    position: relative;
+    align-self: flex-start;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 4px;
+        background-color: $primary;
+        bottom: 0;
+        left: 0;
+    }
+}
