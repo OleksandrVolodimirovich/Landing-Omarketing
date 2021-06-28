@@ -392,6 +392,33 @@
     }
 }
 
+//end portfolio
+
+.team{
+    padding: 120px 0 130px;
+    &__title{
+        margin-bottom: 100px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__name{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 35px 0 12px;
+        color: $numText;
+    }
+    &__position{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
 
 
 
