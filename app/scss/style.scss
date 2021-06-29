@@ -418,7 +418,56 @@
         line-height: 16px;
     }
 }
+//team end
 
+.pricing{
+    background-color: $bg;
+    padding: 145px 0 160px;
+    &__title{
+        margin-bottom: 90px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        & .pricing__item{
+            background-color: $white;
+            text-align: center;
+            padding: 24px 25px 50px;
+            width: 370px;
+            &-li{
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 22px;
+                color: $title;
+                margin-bottom: 30px;
+            }
+            &-name{
+                text-align-last: left;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            &-num{
+                font-size: 80px;
+                line-height: 109px;
+                margin-bottom: 50px;
+            }
+            & sup{
+                font-size: 40px;
+                line-height: 54px;
+            }
+            &-link{
+                font-family: 'Montserrat', sans-serif;
+                display: block;
+                margin-top: 70px;
+                font-weight: 700;
+                font-size: 14px;
+                color: $title;
+                line-height: 24px;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+}
 
 
 
