@@ -468,7 +468,17 @@
         }
     }
 }
+//end pricing
 
+.clients{
+    padding: 70px 0 95px;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+//end clients
 
 
 
