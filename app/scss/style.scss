@@ -480,6 +480,58 @@
 }
 //end clients
 
+.conection{
+    padding: 145px 0 160px;
+    background-image: url("../images/conection-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 46%;
+    background-position: right  40%;
+    &__title{
+        margin-bottom: 80px;
+    }
+    &__form{
+        max-width: 569px;
+    }
+    &__text{
+        border: none;
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid $primaryText;
+        padding: 16px 0;
+        margin-bottom: 16px;
+        font-size: 16px;
+        font-weight: bold;
+        &::placeholder{
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 3.70909px;
+            color: $holder;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+        &:focus{
+            outline-color: $holder;
+        }
+    }
+    &-textarea{
+        min-height: 140px;
+        resize: none;
+    }
+    &__btn{
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 13px;
+        color: $white;
+        text-transform: uppercase;
+        padding: 17px 70px 15px;
+        border: none;
+        background: $title;
+        cursor: pointer;
+        margin-top: 40px;
+        letter-spacing: 2px;
+    }
+}
+//end conection
 
 
 
