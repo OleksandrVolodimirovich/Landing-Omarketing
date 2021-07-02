@@ -533,6 +533,61 @@
 }
 //end conection
 
+.footer{
+    &__top{
+        padding: 110px 10px 160px;
+        background-color: $numText;
+        text-align: center;
+    }
+    &__logo{
+        display: inline-block;
+        padding: 0 35px 4px;
+        border-bottom: 2px solid $primary;
+        margin-bottom: 70px;
+    }
+    &__top &__sicial{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 65px;
+        &-list{
+            padding: 0 15px;
+        }
+        &-link{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $white;
+            letter-spacing: 4px;
+        }
+    }
+    &__contact{
+        font-size: 14px;
+        line-height: 32px;
+        color: $white;
+        margin-bottom: 60px;
+        &-link{
+            display: block;
+            margin: 10px 0;
+            color: $white;
+        }
+    }
+    &__go-top{
+        display: inline-block;
+    }
+    &__copy{
+        padding: 40px 10px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+        color: #ccc;
+        background-color: #2a2c2b;
+    }
+}
+
+
+@import "@media";
 
 
 
@@ -540,9 +595,22 @@
 
 
 
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Raleway', sans-serif;
-//font-family: 'Montserrat', sans-serif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
