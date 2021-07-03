@@ -12,6 +12,9 @@
     }
     .menu{
         display: none;
+        &__btn{
+            display: block;
+        }
     }
 }
 @media (max-width: 440px){

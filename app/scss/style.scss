@@ -50,6 +50,9 @@
     }
 }
 .menu{
+    &__btn{
+        display: none;
+    }
     &__list{
         display: flex;
         &-item + &-item{
