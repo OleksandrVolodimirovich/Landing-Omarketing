@@ -3,12 +3,18 @@
         &__top{
             &-inner{
                 align-items: center;
-                & &--active{
+                & path, & rect{
+                    transition: all .5s;
+                }
+                &#{&}--active{
+                    & path{
+                        fill: #fff;
+                    }
                     & .menu{
                         &__list{
                         transform: translateY(0%);
                         }
-                        &__btn path{
+                        &__btn rect{
                             fill: #fff;
                         }
                     }
@@ -42,7 +48,7 @@
             position: relative;
             z-index: 2;
         }
-        & &__list{
+        & ul#{&}__list{
             padding: 90px 0 15px;
         }
         &__list{
