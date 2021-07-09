@@ -215,7 +215,7 @@
         margin-bottom: 100px;
     }
     &__filter-btn{
-        margin-right: 40px;
+        margin-right: 65px;
     }
     &__btn{
         background-color: transparent;
@@ -226,8 +226,10 @@
         letter-spacing: 2px;
         color: $numText;
         padding: 0 4px 5px;
-        margin-right: 25px;
         outline-color: $primary;
+        & + &{
+            margin-left: 25px;
+        }
     }
     &__content{
         column-count: 4;
