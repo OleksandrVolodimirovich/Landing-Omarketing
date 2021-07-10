@@ -18,6 +18,11 @@
             margin-left: 60px;
         } 
     }
+    .conection{
+        padding: 75px 0 75px;
+        background-size: 40%;
+        background-position: right 96%;
+    }
 }
 @media (max-width: 1200px){
     .about{
@@ -102,6 +107,30 @@
         &__inner {
             max-width: 100%;
             margin-left: 0;
+        }
+    }
+    .conection{
+        background-image: none;
+        &__form {
+            max-width: 100%;
+        }
+    }
+    .footer{
+        &__top{
+            padding: 75px 10px 75px;
+        }
+        &__logo{
+            margin-bottom: 40px;
+        }
+        &__top &__sicial{
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        &__social{
+            &-list{
+                width: 33.333333%;
+                margin-bottom: 25px;
+            }
         }
     }
 }
@@ -290,6 +319,13 @@
         &__numbers{
             &-item{
                 width: 100%;
+            }
+        }
+    }
+    .footer{
+        &__social{
+            &-list{
+                width: 50%;
             }
         }
     }
