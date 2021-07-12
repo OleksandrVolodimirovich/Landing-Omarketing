@@ -7,6 +7,9 @@
 
 .header{
     &__top{
+        position: sticky;
+        top: 0;
+        background-color: #  ;
         &-inner{
         padding-bottom: 29px;
         display: flex;
