@@ -25,6 +25,11 @@
     }
 }
 @media (max-width: 1200px){
+    .header{
+        &__top-inner{
+            padding-bottom: 5px;
+        }
+    }
     .about{
         padding: 55px 0 40px;
         &__inner{

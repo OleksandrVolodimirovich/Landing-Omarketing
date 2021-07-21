@@ -7,9 +7,12 @@
 
 .header{
     &__top{
-        position: sticky;
+        position: fixed;
         top: 0;
-        background-color: #  ;
+        left: 0;
+        right: 0;
+        background-color: $white;
+        z-index: 999;
         &-inner{
         padding-bottom: 29px;
         display: flex;
@@ -23,6 +26,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+        padding-top: 100px;
         &-inner{
             display: flex;
             flex-direction: column;
