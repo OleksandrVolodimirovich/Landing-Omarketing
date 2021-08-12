@@ -6,4 +6,11 @@ $title: #242121;
 $author:#9E9E9E;
 $numText: #333;
 $modal: #4C4A4A;
-$holder: #b8b8b8;                                                       
+$holder: #b8b8b8;
+
+@function max($numbers...) {
+@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+@return m#{i}n(#{$numbers});
+}
